@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <MageMash_BestSellerSort>
+            <version>0.1.0</version>
+        </MageMash_BestSellerSort>
+    </modules>
+    <global>
+        <resources>
+            <magemash_bestsellersort_setup>
+                <setup>
+                    <module>MageMash_BestSellerSort</module>
+                    <class>Mage_Catalog_Model_Resource_Eav_Mysql4_Setup</class>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </magemash_bestsellersort_setup>
+        </resources>
+
+
+
+
+        <events>
+            <catalog_product_flat_rebuild>
+                <observers>
+                    <rebuild_best_sellers_observer>
+                        <type>singleton</type>
+                        <class>MageMash_BestSellerSort_Model_Observer</class>
+                        <method>rebuildBestSellers</method>
+                    </rebuild_best_sellers_observer>
+                </observers>
+            </catalog_product_flat_rebuild>
+        </events>
+    </global>
+</config>
