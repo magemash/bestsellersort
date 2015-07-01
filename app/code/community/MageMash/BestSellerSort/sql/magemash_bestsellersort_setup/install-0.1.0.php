@@ -12,10 +12,6 @@ $installer = $this;
 
 $installer->startSetup();
 
-//$productEntityTypeId = $installer->getEntityTypeId('catalog_product');
-//$installer->updateAttribute($productEntityTypeId, 'best_seller', 'frontend_label', 'Newest');
-//$installer->updateAttribute($productEntityTypeId, 'best_seller', 'used_for_sort_by', 1);
-//
 $productTypes = array(
     Mage_Catalog_Model_Product_Type::TYPE_SIMPLE,
     Mage_Catalog_Model_Product_Type::TYPE_BUNDLE,

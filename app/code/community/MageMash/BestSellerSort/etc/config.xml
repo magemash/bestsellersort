@@ -17,10 +17,6 @@
                 </connection>
             </magemash_bestsellersort_setup>
         </resources>
-
-
-
-
         <events>
             <catalog_product_flat_rebuild>
                 <observers>
