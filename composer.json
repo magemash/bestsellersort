@@ -1,0 +1,18 @@
+{
+  "name": "magemash/bestsellersort",
+  "license": "GPL-3.0",
+  "type": "magento-module",
+  "description": "Adds best sellers to sort",
+  "homepage": "https://github.com/magemash/bestsellersort",
+  "require": {
+    "php": ">=5.3",
+    "magento-hackathon/magento-composer-installer": "*"
+  },
+  "authors": [
+    {
+      "name": "Scott Pringle",
+      "email": "scott@getcommerce.com",
+      "role": "Author/Maintainer"
+    }
+  ]
+}
